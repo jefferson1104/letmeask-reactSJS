@@ -35,8 +35,21 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      // alert('Room does not exists.');
       toast.error('Sala inexistente ou código incorreto.', {
+        duration: 3000,
+          position: "bottom-center",
+          style: {
+            border: '1px solid #835afd',
+            padding: '16px',
+            color: '#29292e',
+            marginBottom: '100px'
+          },
+      });
+      return;
+    }
+
+    if (roomRef.val().endedAt) {
+      toast.error('Está sala ja foi encerrada.', {
         duration: 3000,
           position: "bottom-center",
           style: {
