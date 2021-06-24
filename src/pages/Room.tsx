@@ -1,6 +1,6 @@
 import { FormEvent, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { parse } from "yargs";
+import toast, { Toaster } from 'react-hot-toast';
 
 import logoImg from "../assets/images/logo.svg";
 
@@ -75,7 +75,17 @@ export function Room() {
     }
 
     if (!user) {
-      throw new Error('You must be logged in');
+      const toastError = toast.error('Faça login para enviar uma pergunta.', { 
+        duration: 3000,
+        position: "bottom-center",
+        style: {
+          border: '1px solid #835afd',
+          padding: '16px',
+          color: '#29292e',
+          marginBottom: '100px'
+        },
+      });
+      return (toastError);
     }
 
     const question = {
@@ -95,6 +105,7 @@ export function Room() {
 
   return (
     <div id="page-room">
+      <Toaster/>
       <header>
         <div className="content">
           <img src={logoImg} alt="LetMeAsk" />
