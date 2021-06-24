@@ -8,6 +8,7 @@ import { Button } from "../components/Button";
 import { RoomCode } from "../components/RoomCode";
 import { useAuth } from "../hooks/useAuth";
 import { database } from "../services/firebase";
+import { Question } from "../components/Question";
 
 import '../styles/room.scss';
 
@@ -15,7 +16,7 @@ type RoomParams = {
   id: string;
 }
 
-type Question = {
+type QuestionType = {
   id: string;
   author: {
     name: string;
@@ -40,7 +41,7 @@ export function Room() {
   const { user } = useAuth();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState('');
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const [questions, setQuestions] = useState<QuestionType[]>([]);
   const [title, setTitle] = useState('');
 
   const roomId = params.id;
@@ -75,7 +76,7 @@ export function Room() {
     }
 
     if (!user) {
-      const toastError = toast.error('Faça login para enviar uma pergunta.', { 
+      const toastError = toast.error('Faça login para enviar uma pergunta.', {
         duration: 3000,
         position: "bottom-center",
         style: {
@@ -138,6 +139,18 @@ export function Room() {
             <Button type="submit" disabled={!user}>Enviar pergunta</Button>
           </div>
         </form>
+
+        <div className="question-list">
+          {questions.map(question => {
+            return (
+              <Question 
+                key={question.id}
+                content={question.content}
+                author={question.author}
+              />
+            )
+          })}
+        </div>
       </main>
     </div>
   )
