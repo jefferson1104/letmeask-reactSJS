@@ -1,2 +1,5 @@
-Pesquisar sobre a lib
-react-hot-toast
+Estudar a lib
+react-modal
+
+https://www.npmjs.com/package/react-modal
+https://github.com/reactjs/react-modal
