@@ -48,7 +48,7 @@ $ yarn start
 
 ##### 🎨 Screenshots
 
-<p >
+<p align="center">
   <img width=500 src="./src/assets/screenshots/screenshot-01.png">
   <img width=500 src="./src/assets/screenshots/screenshot-02.png">
   <img width=500 src="./src/assets/screenshots/screenshot-03.png">
