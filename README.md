@@ -1,19 +1,15 @@
-<h2 align="center">
+<div align="center">
   <img alt="Moveit" src="./src/assets/images/logo.svg">
-</h2>
+  <p align="center">
+    <img alt="technology" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
+    <img alt="technology" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+    <img alt="technology" src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
+  </p>
+</div>
 
-<p align="center">
-  <img alt="technology" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-  <img alt="technology" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img alt="technology" src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
-</p>
-
-##### :memo: Sobre o projeto
-
-Letmeask é uma plataforma para organizar perguntas, possui integração com banco de dados realtime e método de autenticação do firebase, nesse projeto foi utilizado diversos conceitos e recursos da biblioteca reactjs alem de dependencias e bibliotecas externas interessantes.
-
-##### :rocket: Principais tecnologias
-
+# :memo: About this project
+Letmeask is a platform to organize questions, it has integration with realtime database and firebase authentication method, in this project several concepts and resources of the reactjs library were used, besides dependencies and interesting external libraries.
+# :rocket: Main technologies
 <ul>
   <li><a target="_blank" href="https://pt-br.reactjs.org/">reactjs</a></li>
   <li><a target="_blank" href="https://www.typescriptlang.org/docs/">typescript</a></li>
@@ -23,31 +19,28 @@ Letmeask é uma plataforma para organizar perguntas, possui integração com ban
   <li><a target="_blank" href="https://reactrouter.com/web/guides/quick-start">react-router-dom</a></li>
 </ul>
 
-##### :cyclone: Como executar este projeto localmente?
-
+# :cyclone: How to run this project
 ```bash
-# Clone este repositório
+# Clone this repository
 $ git clone https://github.com/jefferson1104/letmeask-reactSJS.git
 
-# Acesse a paste do projeto
-letmeask-reactSJS
+# Access directory project
+$ cd letmeask-reactSJS
+$ code . 
 
-# Instale as dependencias do projeto utilizando o gerenciado de pacotes yarn
+# Install project dependencies using yarn package manager
 $ yarn
 
-# Execute o projeto localmente
+# Run this application
 $ yarn start
-
 ```
 
-##### :bulb: Dicas de melhorias
+# :bulb: Improvement Tips
+- Make the project responsive
+- Create a dark theme
+- Use the [react-modal] library (https://github.com/reactjs/react-modal)
 
-- Deixar o projeto responsivo
-- Criar um tema dark
-- Utilizar a biblioteca [react-modal](https://github.com/reactjs/react-modal)
-
-##### 🎨 Screenshots
-
+# 🎨 Screenshots
 <p align="center">
   <img width=500 src="./src/assets/screenshots/screenshot-01.png">
   <img width=500 src="./src/assets/screenshots/screenshot-02.png">
