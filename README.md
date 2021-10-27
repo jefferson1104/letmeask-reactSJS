@@ -22,7 +22,7 @@ Letmeask is a platform to organize questions, it has integration with realtime d
 # :cyclone: How to run this project
 ```bash
 # Clone this repository
-$ git clone https://github.com/jefferson1104/letmeask-reactSJS.git
+$ git clone https://github.com/jefferson1104/letmeask-reactjs.git
 
 # Access directory project
 $ cd letmeask-reactSJS
